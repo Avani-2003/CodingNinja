@@ -1,0 +1,9 @@
+int findUnique(int *arr, int size)
+{
+    int flag=0;
+    for(int i=0;i<size;i++)
+    {
+        flag=flag^arr[i];
+    }
+    return flag;
+}
